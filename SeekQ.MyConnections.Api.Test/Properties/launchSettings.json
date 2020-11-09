@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SeekQ.MyConnections.Api.Test": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

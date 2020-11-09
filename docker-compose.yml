@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  seekq.myconnections.api:
+    image: ${DOCKER_REGISTRY-}seekqmyconnectionsapi
+    ports:
+      - "32703:80"
+    build:
+      context: .
+      dockerfile: SeekQ.MyConnections.Api/Dockerfile
+    environment:
+      ASPNETCORE_ConnectionStrings__MSSQL: "Server=seekq.mssql,1433;Database=SeekQ.MyConnections;User Id=sa;Password=Password123"
+
+networks:
+  default:
+    external:
+      name: SEEKQ_NETWORK
