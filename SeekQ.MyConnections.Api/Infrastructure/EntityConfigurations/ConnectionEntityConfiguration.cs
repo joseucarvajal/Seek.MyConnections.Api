@@ -1,10 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SeekQ.MyConnections.Api.Domain.ConnectionsAggregate;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace SeekQ.MyConnections.Api.Infrastructure.EntityConfigurations
 {
